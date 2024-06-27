@@ -1,0 +1,987 @@
+:root{
+    --theme: #3b1b5a;
+    --white: #ffffff;
+    --black: #000000;
+}
+@font-face {
+    font-family: "Livvic";
+    src: url('../fonts/Livvic-Bold.eot');
+    src: url('../fonts/Livvic-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Livvic-Bold.woff2') format('woff2'),
+        url('../fonts/Livvic-Bold.woff') format('woff'),
+        url('../fonts/Livvic-Bold.ttf') format('truetype'),
+        url('../fonts/Livvic-Bold.svg#Livvic-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Livvic";
+    src: url('../fonts/Livvic-Black.eot');
+    src: url('../fonts/Livvic-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Livvic-Black.woff2') format('woff2'),
+        url('../fonts/Livvic-Black.woff') format('woff'),
+        url('../fonts/Livvic-Black.ttf') format('truetype'),
+        url('../fonts/Livvic-Black.svg#Livvic-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Livvic";
+    src: url('../fonts/Livvic-BlackItalic.eot');
+    src: url('../fonts/Livvic-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Livvic-BlackItalic.woff2') format('woff2'),
+        url('../fonts/Livvic-BlackItalic.woff') format('woff'),
+        url('../fonts/Livvic-BlackItalic.ttf') format('truetype'),
+        url('../fonts/Livvic-BlackItalic.svg#Livvic-BlackItalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Livvic";
+    src: url('../fonts/Livvic-ExtraLightItalic.eot');
+    src: url('../fonts/Livvic-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Livvic-ExtraLightItalic.woff2') format('woff2'),
+        url('../fonts/Livvic-ExtraLightItalic.woff') format('woff'),
+        url('../fonts/Livvic-ExtraLightItalic.ttf') format('truetype'),
+        url('../fonts/Livvic-ExtraLightItalic.svg#Livvic-ExtraLightItalic') format('svg');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Livvic";
+    src: url('../fonts/Livvic-ExtraLight.eot');
+    src: url('../fonts/Livvic-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Livvic-ExtraLight.woff2') format('woff2'),
+        url('../fonts/Livvic-ExtraLight.woff') format('woff'),
+        url('../fonts/Livvic-ExtraLight.ttf') format('truetype'),
+        url('../fonts/Livvic-ExtraLight.svg#Livvic-ExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Livvic";
+    src: url('../fonts/Livvic-BoldItalic.eot');
+    src: url('../fonts/Livvic-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Livvic-BoldItalic.woff2') format('woff2'),
+        url('../fonts/Livvic-BoldItalic.woff') format('woff'),
+        url('../fonts/Livvic-BoldItalic.ttf') format('truetype'),
+        url('../fonts/Livvic-BoldItalic.svg#Livvic-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Livvic";
+    src: url('../fonts/Livvic-Italic.eot');
+    src: url('../fonts/Livvic-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Livvic-Italic.woff2') format('woff2'),
+        url('../fonts/Livvic-Italic.woff') format('woff'),
+        url('../fonts/Livvic-Italic.ttf') format('truetype'),
+        url('../fonts/Livvic-Italic.svg#Livvic-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Livvic";
+    src: url('../fonts/Livvic-LightItalic.eot');
+    src: url('../fonts/Livvic-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Livvic-LightItalic.woff2') format('woff2'),
+        url('../fonts/Livvic-LightItalic.woff') format('woff'),
+        url('../fonts/Livvic-LightItalic.ttf') format('truetype'),
+        url('../fonts/Livvic-LightItalic.svg#Livvic-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Livvic";
+    src: url('../fonts/Livvic-Light.eot');
+    src: url('../fonts/Livvic-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Livvic-Light.woff2') format('woff2'),
+        url('../fonts/Livvic-Light.woff') format('woff'),
+        url('../fonts/Livvic-Light.ttf') format('truetype'),
+        url('../fonts/Livvic-Light.svg#Livvic-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Livvic";
+    src: url('../fonts/Livvic-Medium.eot');
+    src: url('../fonts/Livvic-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Livvic-Medium.woff2') format('woff2'),
+        url('../fonts/Livvic-Medium.woff') format('woff'),
+        url('../fonts/Livvic-Medium.ttf') format('truetype'),
+        url('../fonts/Livvic-Medium.svg#Livvic-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Livvic";
+    src: url('../fonts/Livvic-MediumItalic.eot');
+    src: url('../fonts/Livvic-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Livvic-MediumItalic.woff2') format('woff2'),
+        url('../fonts/Livvic-MediumItalic.woff') format('woff'),
+        url('../fonts/Livvic-MediumItalic.ttf') format('truetype'),
+        url('../fonts/Livvic-MediumItalic.svg#Livvic-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Livvic";
+    src: url('../fonts/Livvic-SemiBold.eot');
+    src: url('../fonts/Livvic-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Livvic-SemiBold.woff2') format('woff2'),
+        url('../fonts/Livvic-SemiBold.woff') format('woff'),
+        url('../fonts/Livvic-SemiBold.ttf') format('truetype'),
+        url('../fonts/Livvic-SemiBold.svg#Livvic-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Livvic";
+    src: url('../fonts/Livvic-Regular.eot');
+    src: url('../fonts/Livvic-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Livvic-Regular.woff2') format('woff2'),
+        url('../fonts/Livvic-Regular.woff') format('woff'),
+        url('../fonts/Livvic-Regular.ttf') format('truetype'),
+        url('../fonts/Livvic-Regular.svg#Livvic-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Livvic";
+    src: url('../fonts/Livvic-SemiBoldItalic.eot');
+    src: url('../fonts/Livvic-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Livvic-SemiBoldItalic.woff2') format('woff2'),
+        url('../fonts/Livvic-SemiBoldItalic.woff') format('woff'),
+        url('../fonts/Livvic-SemiBoldItalic.ttf') format('truetype'),
+        url('../fonts/Livvic-SemiBoldItalic.svg#Livvic-SemiBoldItalic') format('svg');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Livvic";
+    src: url('../fonts/Livvic-ThinItalic.eot');
+    src: url('../fonts/Livvic-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Livvic-ThinItalic.woff2') format('woff2'),
+        url('../fonts/Livvic-ThinItalic.woff') format('woff'),
+        url('../fonts/Livvic-ThinItalic.ttf') format('truetype'),
+        url('../fonts/Livvic-ThinItalic.svg#Livvic-ThinItalic') format('svg');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Livvic";
+    src: url('../fonts/Livvic-Thin.eot');
+    src: url('../fonts/Livvic-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Livvic-Thin.woff2') format('woff2'),
+        url('../fonts/Livvic-Thin.woff') format('woff'),
+        url('../fonts/Livvic-Thin.ttf') format('truetype'),
+        url('../fonts/Livvic-Thin.svg#Livvic-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    overflow-x: hidden;
+}
+body {
+    overflow-x: hidden;
+    font-family: "Livvic";
+    color: #000;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: background 1s ease;
+    background: rgb(59,27,90);
+    background: linear-gradient(90deg, rgba(59,27,90,1) 0%, rgba(42,22,75,1) 100%);
+    letter-spacing: 0.2px;
+}
+::-moz-selection{color:#fff;background:#2128bd;}
+::selection{color:#fff;background:#2128bd;}
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*:focus{
+    outline: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: middle;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1200px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1, h2, h3, h4, h5, h6 {margin-bottom:20px;line-height: 1.25;margin-top: 0;}
+h5{
+    font-size: 20px;
+    font-weight: 600;
+}
+p{
+    margin: 0 0 25px;
+}
+header .header-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+header {
+    padding: 25px 0;
+    position: relative;
+}
+header .header-logo,
+header .header-right{
+    width: 50%;
+}
+header .header-right {
+    text-align: right;
+}
+header .header-logo h1{
+    margin: 0;
+}
+header .header-logo h1 a{
+    color: var(--white);
+}
+header .header-logo h1 a .site-tagline{
+    font-size: 16px;
+    display: block;
+}
+header .header-logo h1 a .desc{
+    font-size: 14px;
+    display: block;
+}
+header .signin-btn img,
+header .signin-btn span{
+    display: inline-block;
+    vertical-align: middle;
+}
+header .signin-btn img {
+    margin-right: 5px;
+}
+header .signin-btn {
+    border: 1px solid var(--white);
+    border-radius: 8px;
+    padding: 9px 16px;
+    line-height: normal;
+    color: var(--white);
+    font-size: 16px;
+    background-color: transparent;
+}
+header .profile-box{
+    position: relative;
+    display: inline-block;
+    padding: 5px 0 ;
+}
+header .profile-box .user-profile{
+    height: 40px;
+    width: 40px;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    cursor: pointer;
+}
+header .profile-box .user-profile img{
+    filter: brightness(0) invert(0);
+}
+header .profile-box .dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 160px;
+    background-color: var(--white);
+    border-radius: 10px;
+    text-align: left;
+}
+header .profile-box .dropdown a{
+    display: block;
+    padding: 8px 20px;
+    color: var(--black);
+}
+header .profile-box .dropdown a:not(:last-child){
+    border-bottom: 1px solid var(--black);
+}
+header .dropdown{
+    border-radius: 10px;
+    width: 300px;
+}
+header .dropdown {
+    display: none;
+}
+header .dropdown.show {
+    display: block;
+}
+footer .footer-payment p{
+    text-align: center;
+    margin-bottom: 15px;
+    color: var(--white);
+}
+footer .payment-option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.course-box {
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: var(--black);
+}
+.course-box .course-info{
+    display: flex;
+    flex-wrap: wrap;
+    height: 80vh;
+    row-gap: 20px;
+}
+.course-box .course-content {
+    background-color: #151213;
+}
+.course-box .course-profile,.course-box .course-content{
+    width: 50%;
+    padding: 35px;
+    color: var(--white);
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100%;
+}
+.course-box .course-content::-webkit-scrollbar,.course-box .course-profile::-webkit-scrollbar {
+    width: 5px;
+    overflow-y: auto;
+}
+.course-box .course-content::-webkit-scrollbar-thumb,
+.course-box .course-profile::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+}
+.course-sec .course-checkout,
+.course-sec .course-info.hide {
+    display: none;
+}
+.course-sec .course-checkout.show{
+    display: block;
+}
+.course-checkout .checkout-header {
+    padding: 27px 50px;
+    border-bottom: 1px solid #444444;
+}
+.course-checkout .checkout-header a {
+    color: var(--white);
+    font-weight: 600;
+}
+.course-checkout .checkout-header a img {
+    margin-right: 10px;
+}
+.course-checkout .checkout-wrp {
+    padding: 40px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 15px;
+}
+.course-checkout .checkout-wrp .checkout-user,
+.course-checkout .checkout-wrp .checkout-payment{
+    width: 46%;
+}
+.course-checkout .card-header .name{
+    margin: 0 0 5px;
+}
+.course-checkout .selected-plan,
+.course-checkout .price-total {
+    background-color: #161616;
+    color: var(--white);
+    border-radius: 15px;
+    padding: 15px 25px;
+}
+.course-checkout .selected-plan{
+    margin-bottom: 15px;
+}
+.course-checkout .selected-plan label{
+    font-weight: 300;
+    display: block;
+    margin-bottom: 6px;
+}
+.course-checkout .selected-plan .plan,
+.course-checkout .price-total .sub-total,
+.course-checkout .price-total .total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.course-checkout .selected-plan .plan .plan-price {
+    border-radius: 19px;
+    padding: 7px 13px;
+    background-color: rgba(255, 255, 255, 0.1);
+    line-height: normal;
+}
+.course-checkout .price-total .total {
+    font-size: 18px;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    font-weight: 600;
+}
+.card-header a{
+    display: flex;
+    align-items: center;
+    background-color: #202020;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 15px 20px;
+}
+.card-header .user-img{
+    height: 50px;
+    width: 50px;
+    border: 1px solid var(--white);
+    border-radius: 100%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.card-header .user-img img,.course-profile .profile-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover
+}
+.user-info h6{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    color: var(--white);
+}
+.user-info h6.name{
+    font-weight: 600;
+    margin-top: 5px;
+}
+.user-info{
+    margin-left: 15px;
+}
+.course-about {
+    margin-top: 30px;
+}
+.course-about h5{
+    margin-bottom: 15px;
+}
+.course-about .course-type {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.course-about .course-type{
+    margin: 0 -5px 15px;
+}
+.course-about .course-type span {
+    background-color: rgb(255 255 255 / 10%);
+    padding: 7px 9px;
+    margin: 0 5px;
+    vertical-align: middle;
+    font-size: 13px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    min-height: 33px;
+    line-height: normal;
+}
+.course-about .course-type span img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+.course-about p, .course-about li {
+    margin-bottom: 15px;
+    line-height: 20px;
+    font-weight: 300;
+}
+.course-about .icon-list ol {
+    padding-left: 16px;
+}
+.course-about .icon-list p{
+    margin-bottom: 5px;
+}
+.course-about .icon-list {
+    margin-bottom: 25px;
+}
+.disclaimer {
+    padding: 15px;
+    border-radius: 12px;
+    background-color: #0f0f0f;
+    border: 1px solid #1b1b1b;
+}
+.disclaimer h6 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+.disclaimer>:last-child{
+    margin-bottom: 0;
+}
+.disclaimer p {
+    font-size: 13px;
+    line-height: 22px;
+}
+.course-about .desc{
+    margin-bottom: 25px;
+}
+.course-about .course-list {
+    margin: 0 0 10px;
+    padding: 0;
+    list-style: none;
+}
+.course-about .course-list li {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px 10px 46px;
+    border-radius: 5px;
+    border: 1px solid #2d2d2d;
+    color: var(--white);
+    background-image: url(../images/lock.svg);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 15px 50%;
+    margin-bottom: 10px;
+}
+.course-profile .profile-img {
+    border: 2px solid #fff;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin: 0 auto 20px;
+}
+.course-profile .profile-box{
+    border-bottom: 1px solid #1f1f1f;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.course-profile .profile-name {
+    text-align: center;
+}
+.plan .select-plan {
+    border-radius: 10px;
+    background: linear-gradient(263deg, #503ed2 8%, #00e0ff 150.58%);
+    padding: 12px 17px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+}
+.plan .select-plan:not(:last-child){
+    margin-bottom: 10px;
+}
+.plan .select-plan .price {
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: auto;
+    border-radius: 18px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 6px 16px;
+    text-align: center;
+}
+.plan .select-plan input {
+    appearance: none;
+    height: 18px;
+    width: 18px;
+    border: 2px solid var(--white);
+    border-radius: 100%;
+    background: transparent;
+    margin: 0 10px 0 0;
+}
+.plan .select-plan input:checked {
+    box-shadow: inset 0 0 0 3px #2ea3ea;
+    background-color: #fff;
+}
+.plan .title {
+    margin: 0 0 15px;
+    font-size: 18px;
+}
+footer {
+    padding-top: 35px;
+}
+footer .payment-option span {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    background-color: var(--white);
+    border-radius: 100%;
+    justify-content: center;
+    margin: 0 5px;
+}
+.footer-bottom p {
+    margin: 0;
+    text-align: center;
+    color: var(--white);;
+}
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 10px 0;
+    margin-top: 25px;
+}
+.login-modal .modal-header{
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+}
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(12, 12, 12, 0.8);
+    height: 100vh;
+    height: calc((var(--vh, 1vh) * 100));
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    backdrop-filter: blur(1px);
+    padding: 15px;
+}
+.modal.active{
+    opacity: 1;
+    visibility: visible;
+}
+.modal .modal-wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-y: auto;
+}
+.modal .modal-wrap .modal-body {
+    max-width: 380px;
+    margin: auto;
+    width: 100%;
+    border: 2px solid #3c3c3c;
+    border-radius: 8px;
+    background-color: var(--black);
+}
+.login-modal .modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 30px;
+    border-bottom: 1px solid #3c3c3c;
+    color: var(--white);
+    font-weight: 600;
+    font-size: 18px;
+}
+.login-modal .modal-header .close-modal {
+    border: 0;
+    background-color: transparent;
+    padding: 0;
+    flex-shrink: 0;
+    cursor: pointer;
+    line-height: 0;
+}
+.login-modal .modal-header .close-modal:hover img{
+    filter: brightness(0) invert(1);
+}
+.login-modal .modal-content {
+    padding: 30px;
+}
+.login-modal .otp-block {
+    display: none;
+}
+.btn {
+    border: 0;
+    color: var(--white);
+    text-align: center;
+    font-weight: 600;
+    background: linear-gradient(90deg,rgb(177 21 196) 0%, rgb(245 81 232) 100%);
+    border-radius: 30px;
+    padding: 15px 30px;
+    transition: all 0.4s;
+    font-family: "Livvic";
+    font-size: 18px;
+    text-transform: capitalize;
+    cursor: pointer;
+    line-height: 1;
+}
+.login-modal .modal-content .btn{
+    display: block;
+    margin-top: 20px;
+}
+.checkout-payment .btn{
+    padding: 16px 30px;
+    width: 100%;
+    margin-top: 30px;
+}
+.btn:hover{
+    background: linear-gradient(90deg, rgb(245 81 232) 0%, rgb(177 21 196) 100%);
+}
+.form-control {
+    background-color: #242323;
+    border: 0;
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+}
+.form-filed .policy-txt {
+    font-size: 12px;
+    margin: 30px 0 0;
+    border-top: 1px solid #171616;
+    padding-top: 20px;
+    color: #999494;
+}
+.otp-block .backto-filed,
+.otp-block p {
+    color: var(--white);
+}
+.otp-block .backto-filed img{
+    margin-right: 10px;
+}
+.otp-block h6 {
+    font-size: 16px;
+    color: var(--white);
+}
+.otp-block p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+.otp-block .otp-input .form-control {
+    width: 40px;
+    padding: 10px;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 2px;
+    border-radius: 5px;
+    text-align: center;
+}
+.otp-block .otp-resend {
+    color: var(--white);
+    font-size: 12px;
+    margin-top: 15px;
+}
+.otp-block .otp-resend a{
+    color: rgb(245 81 232);
+}
+.modal.gpay-modal .modal-wrap .modal-body {
+    border: 0;
+    background-color: #f3f6fd;
+    position: relative;
+    max-width: 300px;
+    padding: 20px 0 0;
+}
+.modal.gpay-modal .close-modal {
+    position: absolute;
+    right: 6px;
+    border: 0;
+    background-color: #000;
+    border-radius: 40px;
+    height: 24px;
+    width: 24px;
+    padding: 0;
+    top: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.modal.gpay-modal .close-modal img{
+    max-width: 11px;
+    filter: brightness(0) invert(1);
+}
+.modal.gpay-modal .qrcode-scan{
+    width: 100%;
+}
+.plan .btn {
+    width: 100%;
+}
+@media only screen and (max-width: 1280px){
+    header {
+        padding: 8px 0 15px;
+    }
+    .course-box .course-profile, .course-box .course-content{
+        padding: 25px;
+    }
+    header .header-logo img {
+        max-width: 100px;
+    }
+}
+@media only screen and (max-width: 1199px){
+    .container{
+        max-width: 960px;
+    }
+    h5{
+        font-size: 18px
+    }
+    .course-profile .profile-img{
+        height: 82px;
+        width: 82px;
+        margin: 0 auto 15px;
+    }
+    .course-about {
+        margin-top: 20px;
+    }
+    .course-about p, .course-about li{
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+    .card-header .user-img{
+        height: 40px;
+        width: 40px;
+    }
+    .user-info h6{
+        font-size: 14px;
+    }
+    .plan .title {
+        margin: 0 0 10px;
+        font-size: 16px;
+    }
+    .plan .select-plan{
+        font-size: 16px;
+        padding: 10px 16px;
+    }
+    .plan .select-plan .price{
+        font-size: 16px;
+        padding: 5px 13px;            
+    }
+}
+@media only screen and (max-width: 767px){
+    h5{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    body{
+        background: linear-gradient(0deg, rgba(0,0,0,1) 60%, rgba(59,27,90,1) 100%);
+        background: #000;
+    }
+    header .signin-btn{
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+    header .signin-btn img {
+        width: 17px;
+        height: 17px;
+    }
+    header::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(59,27,90,1) 100%);
+        z-index: -1;
+        height: 300px;
+    }
+    .course-profile .profile-img{
+        height: 70px;
+        width: 70px;
+        margin: 0 auto 10px;
+    }
+    .course-box .course-profile, .course-box .course-content {
+        padding: 0;
+        border-radius: 0;
+        background-color: transparent;
+        width: 100%;
+    }
+    .course-box{
+        border-radius: 0;
+        background-color: transparent;
+    }
+    .course-box .course-info{
+        height: auto;
+        flex-direction: column-reverse;
+    }
+    .course-profile .profile-box{
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+    }
+    .plan .select-plan{
+        font-size: 16px;
+        padding: 10px 16px;
+    }
+    .plan .select-plan .price{
+        padding: 4px 16px;
+        font-size: 16px;
+        min-width: 81px;
+    }
+    .card-header a{
+        padding: 15px;
+    }
+    .course-about p, .course-about li{
+        font-size: 15px;
+    }
+    footer {
+        padding-top: 15px;
+        border-top: 1px solid #2d2d2d;
+    }
+    .login-modal .modal-header{
+        font-size: 16px;    
+        padding: 15px 20px;
+    }
+    .login-modal .modal-header .close-modal img {
+        width: 17px;
+        height: 17px;
+    }
+    .login-modal .modal-content {
+        padding: 30px 20px;
+    }
+    .course-checkout .checkout-wrp{
+        padding: 30px 0;
+    }
+    .course-checkout .checkout-wrp .checkout-user, .course-checkout .checkout-wrp .checkout-payment{
+        width: 100%;
+    }
+    .course-checkout .selected-plan, .course-checkout .price-total{
+        padding: 15px;
+    }
+    .course-checkout .checkout-header{
+        padding: 10px 0;
+    }
+    .course-checkout .checkout-header a img {
+        margin-right: 5px;
+    }
+    .course-checkout .checkout-header a{
+        font-size: 15px;
+    }
+    .modal.gpay-modal .modal-wrap .modal-body{
+        max-width: 260px;
+    }
+}
